@@ -1,0 +1,16 @@
+
+apply plugin : 'ear'
+apply plugin : 'java'
+version = '1.0.0.SNAPSHOT'
+
+repositories {
+   mavenCentral()
+}
+dependencies {
+    deploy project(path:':login-web')
+    deploy project(path:':login-app')
+}
+task wrapper (type: Wrapper)
+
+
+
