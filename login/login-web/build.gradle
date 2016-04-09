@@ -1,0 +1,13 @@
+apply plugin : 'war'
+repositories {
+       mavenCentral()
+}
+dependencies {
+	compile project(':login-app')
+	compile 'org.springframework:spring-webmvc:4.0.0.RELEASE'
+	compile 'org.freemarker:freemarker:2.3.23'
+	compile 'org.springframework:spring-context-support:4.0.0.RELEASE'
+	compile 'org.springframework:spring-jdbc:4.0.0.RELEASE'
+	compile 'org.apache.tomcat:tomcat-catalina:7.0.47'
+}
+
